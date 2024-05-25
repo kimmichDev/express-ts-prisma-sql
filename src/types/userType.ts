@@ -1,7 +1,3 @@
-export type UserType = {
-    id: number;
-    name: string;
-    email: string;
-    gender: 'MALE' | 'FEMALE';
-    age: number;
-}
+import { User } from "@prisma/client";
+
+export type UserType = Omit<User, 'id' | 'createdAt' | 'updatedAt'>;
