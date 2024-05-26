@@ -18,6 +18,7 @@ model User {
   email     String     @unique
   gender    UserGender
   age       Int?
+  password  String
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
   posts     Post[]

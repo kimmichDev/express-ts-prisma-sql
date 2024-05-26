@@ -5,6 +5,7 @@ CREATE TABLE `User` (
     `email` VARCHAR(191) NOT NULL,
     `gender` ENUM('MALE', 'FEMALE') NOT NULL,
     `age` INTEGER NULL,
+    `password` VARCHAR(191) NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
 
